@@ -10,10 +10,11 @@ def pets_begin_letter(pets, letter):
     Returns:
         list: results
     """
-    results = []
+
+    d_pets = []
     if isinstance(letter, str):
         for name in pets:
             if isinstance(name, str):
                 if name.lower().startswith(letter.lower()):
-                    results.append(name)
-    return results
+                    d_pets.append(name)
+    return d_pets
