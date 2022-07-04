@@ -9,8 +9,8 @@ def pets_begin_d(pets):
     Returns:
         list: list of pets
     """
-    res = []
+    d_pets = []
     for name in pets:
         if name[0] == 'd':
-            res.append(name)
-    return res
+            d_pets.append(name)
+    return d_pets
